@@ -15,7 +15,7 @@ provider "aws" {
 }
 
 resource "aws_instance" "app_server" {
-  count = 4
+  count = var.numOfEC2
   ami           = var.ami
   instance_type = var.instance_type
 
@@ -23,4 +23,3 @@ resource "aws_instance" "app_server" {
     Name = "${var.instance_name}-${count.index}"
   }
 }
-

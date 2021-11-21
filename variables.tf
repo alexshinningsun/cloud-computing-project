@@ -13,3 +13,8 @@ variable "instance_type"{
   type = string
   default = "t2.micro"
 }
+
+variable "numOfEC2"{
+  type = number
+  default = 3
+}
