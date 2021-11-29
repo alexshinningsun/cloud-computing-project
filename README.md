@@ -1,4 +1,4 @@
-# cloud computing project's setup
+# Cloud computing project's setup
 Goal 1: Measure ec2 x n CPU performance diversity!
 
 Goal 2: Measure ec2 x n Measure performance diversity!
