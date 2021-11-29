@@ -18,7 +18,7 @@ resource "aws_instance" "app_server" {
   count = var.numOfEC2
   ami           = var.ami
   instance_type = var.instance_type
-
+  iam_instance_profile = "arn:aws:iam::710369809035:instance-profile/EC2"
   tags = {
     Name = "${var.instance_name}-${count.index}"
   }
