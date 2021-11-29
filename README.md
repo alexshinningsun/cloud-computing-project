@@ -1,4 +1,6 @@
 # cloud computing project's terraform scripts
 Big Data and Cloud Computing project
 
-Goal: measure n of ec2 performance diversity!
+Goal 1: Measure ec2 x n CPU performance diversity!
+
+Goal 2: Measure ec2 x n Measure performance diversity!
