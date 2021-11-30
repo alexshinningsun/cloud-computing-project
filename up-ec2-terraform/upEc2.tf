@@ -14,6 +14,11 @@ provider "aws" {
   region  = "us-east-1"
 }
 
+resource "aws_key_pair" "deployer" {
+  key_name   = "deployer-key"
+  public_key = "${var.public_key}"
+}
+
 resource "aws_iam_role" "ec2_role" {
   name = "ec2_role"
 
@@ -350,6 +355,7 @@ resource "aws_instance" "app_server" {
   ami           = var.ami
   instance_type = var.instance_type
   iam_instance_profile = "${aws_iam_instance_profile.ec2_profile.name}"
+  key_name = "${aws_key_pair.deployer.key_name}"
   tags = {
     Name = "${var.instance_name}-${count.index}"
   }
