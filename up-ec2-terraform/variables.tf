@@ -4,7 +4,7 @@ variable "instance_name" {
   default     = "cloud-course-prj"
 }
 
-variable "public_key"{
+variable "key_name"{
   default = ""
   type = string
 }
