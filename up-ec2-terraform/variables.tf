@@ -4,6 +4,11 @@ variable "instance_name" {
   default     = "cloud-course-prj"
 }
 
+variable "public_key"{
+  default = ""
+  type = string
+}
+
 variable "ami"{
   default = "ami-04902260ca3d33422"
   type = string
