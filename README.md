@@ -7,4 +7,4 @@ up-ec2-terraform: Cloud computing project's terraform scripts. This terraform sc
 
 `If you want to change the number of n, please go to up-ec2-terraform/variables.tf and change the variable "numOfEC2" to whatever you want.`
 
-
+Please add the public key inside terraform variable file for ec2 creation.
