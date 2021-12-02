@@ -14,5 +14,5 @@ up-ec2-terraform: Cloud computing project's terraform scripts. This terraform sc
 
     Improvement : 
         - Please add the public key inside terraform variable file for ec2 creation. Currently, there are new key pairs on every $Terraform apply.
-        - Reduce the instance role policy.
+        - Reduce the instance role policy on the upEc2.tf
     
